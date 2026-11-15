@@ -1,22 +1,23 @@
 
 {
   "manifest_version": 2,
-  "name": "Sissy University 繁體中文",
-  "version": "1.0.0",
-  "description": "Sissy University 繁體中文介面本地化工具",
+  "name": "繁體中文網頁翻譯工具",
+  "version": "1.0.1",
+  "description": "通用繁體中文網頁翻譯擴充功能",
   "browser_specific_settings": {
     "gecko": {
       "id": "su-firefox-zh-tw@example.org",
       "strict_min_version": "78.0"
-    }
+    },
+    "gecko_android": {}
   },
   "permissions": [
-    "https://sissy-university.com/*"
+    "https://example.org/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://sissy-university.com/*"
+        "https://example.org/*"
       ],
       "js": [
         "translations.js",
