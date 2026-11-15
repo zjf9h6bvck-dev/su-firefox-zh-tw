@@ -1,0 +1,28 @@
+
+{
+  "manifest_version": 2,
+  "name": "Sissy University 繁體中文",
+  "version": "1.0.0",
+  "description": "Sissy University 繁體中文介面本地化工具",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "su-firefox-zh-tw@example.org",
+      "strict_min_version": "78.0"
+    }
+  },
+  "permissions": [
+    "https://sissy-university.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sissy-university.com/*"
+      ],
+      "js": [
+        "translations.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
